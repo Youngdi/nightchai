@@ -20,12 +20,12 @@ $ npm install nightchai
 #### runPipe()
 - It is to combine your test case(it)
 ```sh
-|         function        |         result                       |
-| R.uncurryN(2,           |         R.pipe(                      |
-| R.pipe(                 |         R.tap(login.gotoLogin),      |
-| R.map(R.tap),           |         R.tap(login.typeId),         |
-| R.apply(R.pipe)         |         R.tap(login.clickPassword)   |
-| ));                     |         );
+| function                |         result                    |
+| R.uncurryN(2,           |         R.pipe(                   |
+| R.pipe(                 |         R.tap(login.gotoLogin),   |
+| R.map(R.tap),           |         R.tap(login.typeId),      |
+| R.apply(R.pipe)         |         R.tap(login.clickPassword)|
+| ));                     |         );                        |
 ```
 ```sh
 const { runPipe } = require('nightchai');
