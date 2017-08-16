@@ -1,10 +1,13 @@
 {
   "name": "nightchai",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A try catch plugin for nightmare",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -d --watch",
+    "production": "webpack -p",
+    "jsdoc": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "repository": {
     "type": "git",
@@ -24,5 +27,13 @@
     "chai": "^4.0.2",
     "jsdoc": "^3.5.3",
     "ramda": "^0.24.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "docdash": "^0.4.0",
+    "webpack": "^3.5.4",
+    "webpack-visualizer-plugin": "^0.1.11"
   }
 }
