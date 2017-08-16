@@ -18,7 +18,7 @@ $ npm install nightchai
 
 # usage
 #### runPipe()
-It is to combine your test case(it)
+- It is to combine your test case(it)
 ```sh
 |         function        |         result                       |
 | R.uncurryN(2,           |         R.pipe(                      |
@@ -39,8 +39,8 @@ const { runPipe } = require('nightchai');
 
 
 #### runTask(taskOptions)
-It is to return it which can help you write less code of it. And each one is represnt a test case(it)
-options -> nightmare -> it 
+- It is to return it which can help you write less code of it. And each one is represented a test case(it)
+- options -> nightmare -> it 
 
 |         options         | args                                   |
 | ----------------------- | -------------------------------------- |
@@ -74,10 +74,13 @@ exports.typeId = (username) => runTask({
 });
 ```
 #### setSnapshotPath(path)
-It is to set your snapshot path
-|         path         | 
-| ----------------------- | 
-| string                  | 
+- It is to set your snapshot path
+- 
+
+| path            | 
+| ----------------| 
+| string          | 
+
 ```sh
 const { setSnapshotPath } = require('nightchai');
 setSnapshotPath('./reports/');
