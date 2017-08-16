@@ -1,6 +1,6 @@
 {
   "name": "nightchai",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A try catch plugin for nightmare",
   "main": "index.js",
   "scripts": {
