@@ -1,0 +1,27 @@
+{
+  "name": "nightchai",
+  "version": "0.0.1",
+  "description": "A try catch plugin for nightmare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youngdi/nightchai.git"
+  },
+  "keywords": [
+    "nightmare"
+  ],
+  "author": "youngdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Youngdi/nightchai/issues"
+  },
+  "homepage": "https://github.com/Youngdi/nightchai#readme",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "jsdoc": "^3.5.3",
+    "ramda": "^0.24.1"
+  }
+}
