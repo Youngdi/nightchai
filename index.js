@@ -69,14 +69,14 @@ class CatchThenError {
 }
 
 /**
- * options -> nightmare -> it 
+* options -> nightmare -> it 
 * @param {Object} taskOptions
 *
 * |         options         | args                                   |
 * | ----------------------- | -------------------------------------- |
 * | name                    | it(name)                               |
 * | action                  | nightmare.wait or nightmare.click      |
-* | catch                   | default nightmare.screenshot             |
+* | catch                   | default nightmare.screenshot           |
 * | catchThen               | self invoking function                 |
 */
 exports.runTask = (taskOptions) => (nightmare) => it(taskOptions.name, (done) => {
@@ -103,6 +103,9 @@ exports.runTask = (taskOptions) => (nightmare) => it(taskOptions.name, (done) =>
     });
 })
 
+/**
+ * It is to set your snapshot path
+ */
 exports.setSnapshotPath = (path) => {
   defaultPath = path;
 }
