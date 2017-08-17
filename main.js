@@ -1,10 +1,5 @@
 /** @module utils */
-
-const uncurryN = require('ramda/src/uncurryN');
-const pipe = require('ramda/src/pipe');
-const map = require('ramda/src/map');
-const tap = require('ramda/src/tap');
-const apply = require('ramda/src/apply');
+const R = require('./ramda.custom.js');
 let defaultPath = './';
 
 // var addFour = a => b => c => d => a + b + c + d;
@@ -21,10 +16,10 @@ let defaultPath = './';
 * | R.apply(R.pipe)         |         R.tap(login.clickPassword)   |
 * | ));                     |         );
 */
-exports.runPipe = uncurryN(2,
-  pipe(
-    map(tap),
-    apply(pipe)
+exports.runPipe = R.uncurryN(2,
+  R.pipe(
+    R.map(R.tap),
+    R.apply(R.pipe)
   )
 );
 
